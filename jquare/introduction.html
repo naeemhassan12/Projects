@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <title>Jquery is the advanced of javascript library</title>
+        <script src="js/jquery.js"></script>
+</head>
+<body>
+    <h3>MY name is naeem khan</h3>
+    <input type="text" id="first">
+    <input type="text" id="second">
+    <input type="text" id="result">
+    <button type="button" id="calculate">calculate</button>
+    <script>
+        $(document).ready(function()
+        {
+            $("#calculate").click(function()
+            {
+                var first= $("#first").val();
+                var second = $("#second").val();
+                var result = first * second;
+                $("#result").val(result)
+            })
+
+        }
+        )
+        
+    </script>
+</body>
+</html>

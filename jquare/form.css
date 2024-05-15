@@ -1,0 +1,43 @@
+body{
+    background-image:linear-gradient(to left top,red 50%,green 50%);
+    color: aliceblue;
+}
+.pti{
+    border: 4px solid white;
+    width: 700px ;
+    height: 600px;
+    margin: 50px auto;
+    border-radius: 50px;
+    box-shadow:6px 5px 40px white ;
+
+}
+h1,h4{
+    text-align: center;
+   
+}
+.tble{
+    margin: 05px auto;
+    border-radius: 80px;
+    font-size: 24px;
+    font-style: italic;
+    width: 250px;
+    height: 60px;
+}
+.tr-ble{
+    margin: 5px auto;
+    border-radius: 80px;
+    font-size: 24px;
+    width: 250px;
+    height: 60px;
+}
+
+.btn{
+    margin: 30px 180px;
+    border-radius: 80px;
+    font-size: 30px;
+    width: 180px;
+    height: 60px;
+    background-color:chartreuse;
+    color: aliceblue;
+    border: none;
+}

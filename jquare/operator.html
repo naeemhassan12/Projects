@@ -1,0 +1,53 @@
+<html>
+    <head>
+        <title>operator in jquery</title>
+        <script src="js/jquery.js"></script>
+    </head>
+    <body>
+        <h2>jquery all operator</h2>
+        <h3>the operator mean addition,subtraction,multiplication,devision</h3>
+        <input type="text" id="first_number">
+        <input type="text" id="second_number">
+
+        <select id="operator">
+            <option value="">choice</option>
+            <option value="1">Addition</option>
+            <option value="2">Subtraction</option>
+            <option value="3">multiplication</option>
+            <option value="4">devision</option>
+        </select>
+        <input type="text" id="result">
+
+        <script>
+
+            $(document).ready(function(){
+                $("#operator").change(function()
+                {
+                    var first = $("#first_number").val() *1;
+                    var second = $("#second_number").val()*1;
+                    var result;
+                    var choice = $(this).val() *1;
+                    
+                    switch(choice)
+                    {
+                        case 1:
+                        result = first + second;
+                        break;
+                        case 2:
+                        result = first - second;
+                        break;
+                        case 3:
+                        result = first * second;
+                        break;
+                        case 4:
+                        result = first / second;
+                        break;
+                    }
+                    $("#result").val(result);
+                })
+            });
+
+        </script>
+
+    </body>
+</html>
